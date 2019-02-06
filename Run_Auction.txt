@@ -1,0 +1,31 @@
+
+
+a)Technologies Used:
+1.	Html
+2.	CSS
+3.	JavaScript
+4.	BootStrap
+5.	Oracle
+
+b)To run the developed solution on a new system,
+First of all, the system need to have
+1. Eclipse or any other Java IDE installed
+2. Oracle installed
+
+In the Eclipse,
+1.	Import the Project Auction.
+2.	Open home.jsp and Run on Server
+
+3.	Here , dashboard displaying bids ,login and signup options are there
+4.      In dashboard bid can be places by clicking on place bid which will redirect it to edit.jsp  where bid can be placed.
+	Also users can see other users bid.
+        User can place bid only if he is a registered member. 
+
+Database Commands
+
+create table users(id int,name varchar2(30),email varchar2(30),pwd varchar(20));
+CREATE SEQUENCE c_seq
+ START WITH     1
+ INCREMENT BY   1
+create table product(pid int,name varchar2(30),img varchar2(500),dt varchar(20),tim varchar2(20),dtime varchar2(20),bid varchar(20),descr varchar2(70),country varchar2(20),uid int);
+create table bid1(pid varchar2(15),pname varchar2(20),bid int,bidder int);
